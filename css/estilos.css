@@ -187,6 +187,15 @@ nav .active{
     border-radius: 600px;
     height: 300px;
 }
+#tecnologias h2{
+    color: white;
+}
+#tecnologias{
+    padding-bottom: 5px;
+    background: rgb(255,109,0);
+    background: linear-gradient(90deg, rgba(255,109,0,1) 0%, rgba(226,0,0,1) 82%);
+    
+}
 
 
 @media (max-width: 750px) {
