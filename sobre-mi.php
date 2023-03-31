@@ -1,3 +1,5 @@
+<?php $pg = "sobre_mi"; ?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -16,33 +18,7 @@
 
 <body id="sobre-mi" class="d-flex flex-column h-100">
   <header class="container">
-    <nav class="navbar navbar-expand-md mb-4">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="sobre-mi.html">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <div class="d-inline">
-            <a href="" class="btn btn-rojo" target="_blank">Descargar mi CV <i class="fas fa-download"></i></a>
-          </div>
-        </div>
-      </div>
-    </nav>
+      <?php include_once("menu.php");?>
   </header>
   <main>
     <div class="container">
@@ -51,7 +27,7 @@
           <h1 class="mt-sm-4 pb-sm-4">Sobre mí</h1>
           <p>Apasionado por la tecnología, siempre aprendiendo herramientas nuevas. soy programador web Full Stack y
             Modelador 3D.</p>
-          <a href="contacto.html" class="btn btn-rojo">Enviar mensaje</a>
+          <a href="contacto.php" class="btn btn-rojo">Enviar mensaje</a>
         </div>
         <div class="col-12 col-sm-4">
           <img src="images/marco.jpg" alt="Marco Luciano Giampietro" title="Marco Luciano Giampietro"
