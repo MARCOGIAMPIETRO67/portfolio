@@ -27,7 +27,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-sm-6 my-4 mt-sm-5 text-center offset-sm-3 mb-3">
-          <p class="p-1">Bienvenid@ a mi sitio web sobre desarrollo web.</p>
+          <p class="py-1">Bienvenid@ a mi sitio web sobre desarrollo web.</p>
         </div>
       </div>
       <div class="row">

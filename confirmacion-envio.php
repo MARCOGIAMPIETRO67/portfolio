@@ -1,36 +1,4 @@
-<?php $pg = "contacto"; 
-
-if($_POST){
-  $nombre = $_POST["txtNombre"];
-  $correo = $_POST["txtCorreo"];
-  $telefono = $_POST["txtTelefono"];
-  $mensaje = $_POST["txtMensaje"];
-
-  if($nombre != "" && $correo != "" && $telefono != "" && $mensaje != "") {
-    $para = "marcosgiampietro67@gmail.com";
-    $titulo = "Recibiste un mensaje desde tu web";
-
-    $cuerpo = "
-    Nombre: $nombre <br>
-    Correo: $correo <br>
-    Telefono: $telefono <br>
-    Mensaje: $mensaje
-    ";
-
-    $cabeceras = 'MIME-Version: 1.0' . "\r\n";
-    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-
-
-    $cabeceras .= 'To: marcosgiampietro67@gmail.com' . "\r\n";
-    $cabeceras .= 'From: contacto@marcogiampietro.com.ar' . "\r\n";
-
-    //mail($para, $titulo, $cuerpo, $cabeceras);
-    header("Location: confirmacion-envio.php");
-  }
-
-}
-?>
-
+<?php $pg = "contacto"; ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 <head>
@@ -52,32 +20,12 @@ if($_POST){
     <main class="container">
         <div class="row">
             <div class="col-12 pt-3 pb-5">
-                <h1>Contacto</h1>
+                <h1>Gracias por contactarte</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-sm-6">
-              <p>Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</p>
-           </div>
-           <div class="col-12 col-sm-6">
-              <form action="" method="post">
-                <div class="pb-3">
-                  <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" class="form-control shadow">
-                </div>
-                <div class="pb-3">
-                  <input type="email" id="txtCorreo" name="txtCorreo" placeholder="Correo" class="form-control shadow">
-              </div>
-              <div class="pb-3">
-                  <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Teléfono/Whatsapp" class="form-control shadow" required="">
-              </div>
-              <div class="pb-3">
-                  <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe aquí tu mensaje" class="form-control shadow"></textarea>
-                  
-              </div>
-              <div class="me-auto text-right">
-                  <button type="submit" id="btnEnviar" name="btnEnviar" class="btn">ENVIAR</button> <a href="confirmacion-envio"></a>
-              </div>
-              </form>
+              <p>Te estaré respondiendo a la brevedad.</p>
            </div>
         </div>
     </main>
